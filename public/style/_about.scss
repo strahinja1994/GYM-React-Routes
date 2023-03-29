@@ -1,0 +1,116 @@
+.about{
+    width: 100%;
+    margin: auto;
+}
+
+.about__story{
+    width: 80%;
+    margin: 100px auto 100px;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}
+
+.about__story-background{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-image: url(../images/about1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.about__story-background{
+    transform: skew(-15deg);
+}
+
+.about__story-info{
+    width: 40%;
+}
+
+.about__story-info--title{
+    font-family: poppinsBold;
+    font-size: 40px;
+    color: $color1;
+    padding-bottom: 20px;
+}
+
+.about__story-info--text{
+    font-family: poppinsRegular;
+    color: $color4;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.about__story-background-2{
+    background-image: url(../images/about2.jpg);
+}
+
+.about__story-background-2{
+    transform: skew(0deg);
+}
+
+.about__story-background-2:hover{
+    transform: skew(-15deg);
+}
+
+.about__story-background-3{
+    background-image: url(../images/about3.jpg);
+}
+
+.about__story-background-3{
+    transform: skew(0deg);
+}
+
+.about__story-background-3:hover{
+    transform: skew(-15deg);
+}
+
+@media screen and(min-width:600px) and(max-width:1200px) {
+    .about__story{
+        width: 50%;
+        gap:50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__story-background{
+        order:2;
+    }
+
+    .about__story-info{
+        width: 100%;
+        order: 1;
+    }
+
+    .about__story-info--title, .about__story-info--text{
+        text-align: center;
+    }
+}
+
+@media screen and(max-width:599px) {
+    .about__story{
+        width: 90%;
+        gap:50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__story-background{
+        order:2;
+        width: 260px;
+        height: 260px;
+    }
+
+    .about__story-info{
+        width: 100%;
+        order: 1;
+    }
+
+    .about__story-info--title, .about__story-info--text{
+        text-align: center;
+    }
+}

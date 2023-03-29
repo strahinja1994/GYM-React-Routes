@@ -1,0 +1,86 @@
+.trainers{
+    width: 100%;
+}
+
+.trainers__container{
+    width: 80%;
+    margin:100px auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.trainers__trainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px 10px 20px;
+    border-radius: 0 30px 0 30px;
+    border: 2px solid transparent;
+    background: $color6;
+}
+
+.trainers__trainer-image{
+    max-width: 400px;
+    border-radius: 0 30px 0 30px;
+}
+
+.trainers__trainer-name{
+    font-family: poppinsBold;
+    color: $color1;
+    font-size: 25px;
+    padding: 20px 20px 10px 20px;
+}
+
+.trainers__trainer-job{
+    font-family: poppinsBold;
+    font-size: 20px;
+    color: $color4;
+}
+
+.trainers__trainer-socials{
+    margin: 20px auto 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trainers__trainer-socials--icon{
+    font-size: 30px;
+    color: $color1;
+    padding: 10px;
+}
+
+.trainers__trainer-socials--icon:hover{
+    color:$color5;
+}
+
+@media screen and(min-width:600px) and(max-width:1200px) {
+    .trainers__container{
+        width: 100%;
+        gap:20px;
+    }
+}
+
+@media screen and(max-width:599px) {
+    .trainers__container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .trainers__trainer-image{
+        max-width: 250px;
+    }
+
+    .trainers__trainer-name{
+        font-size: 20px;
+    }
+
+    .trainers__trainer-job{
+        font-size: 15px;
+    }
+}

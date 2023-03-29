@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'nav';
+@import 'home';
+@import 'about';
+@import 'testimonials';
+@import 'footer';
+@import 'headerPages';
+@import 'notfound';
+@import 'contact';
+@import 'gallery';
+@import 'plans';
+@import 'trainers';
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $color3;
+}
+
+ul{
+    list-style:none;
+}

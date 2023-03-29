@@ -1,0 +1,14 @@
+.gallery__container{
+    width: 80%;
+    margin: 100px auto 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.gallery__container-img{
+    max-height: 500px;
+    max-width: 40%;
+}

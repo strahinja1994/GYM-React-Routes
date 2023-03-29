@@ -1,0 +1,127 @@
+.plans{
+    width: 100vw;
+}
+
+.plans__container{
+    width: 80%;
+    margin: 100px auto 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.plans__container-plan{
+    text-align: center;
+    width: calc(33% - 100px);
+    background: $color6;
+    border: 2px solid transparent;
+    border-radius: 0 30px;
+}
+
+.plans__container-plan:hover{
+    border: 2px solid $color4;
+    background: transparent;
+
+    .plans__container-plan--price{
+        color:$color5;
+    }
+
+    .plans__container-plan--btn{
+        border-color: $color4;
+        color: $color4;
+    }
+}
+
+.plans__container-plan--name{
+    color: $color1;
+    padding: 30px 20px 10px 20px;
+    font-family: poppinsBold;
+}
+
+.plans__container-plan--desc{
+    color: $color4;
+    padding: 10px 20px;
+    font-family: poppinsRegular;
+}
+
+.plans__container-plan--price{
+    color: $color3;
+    font-family: poppinsBold;
+    font-size: 35px;
+    padding: 10px 20px;
+
+    span{
+        font-size: 25px;
+        color: $color4;
+    }
+}
+
+.plans__container-plan--features{
+    color: $color1;
+    font-family: poppinsBold;
+    font-size: 25px;
+}
+
+.disabled{
+    color: $color5;
+    padding: 5px;
+    font-family: poppinsRegular;
+}
+
+.enabled{
+    color: $color1;
+    padding: 5px;
+    font-family: poppinsRegular;
+    cursor: pointer;
+}
+
+.enabled:hover{
+    color:$color2;
+}
+
+.plans__container-plan--btn{
+    padding: 10px 30px;
+    font-family: poppinsRegular;
+    color: $color1;
+    background: $color2;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.plans__container-plan--btn:hover{
+    border-color: $color4;
+    background-color: $color5;
+    color: $color4;
+}
+
+@media screen and(min-width:900px) and(max-width:1400px) {
+    .plans__container{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .plans__container-plan{
+        width:calc(33% - 40px)
+    }
+}
+
+@media screen and(max-width:899px) {
+    .plans__container{
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .plans__container-plan{
+        width: 100%;
+    }
+
+    .plans__container-plan--price{
+        font-size: 30px;
+        text-align: center;
+    
+        span{
+            font-size: 20px;
+        }
+
+    }
+}

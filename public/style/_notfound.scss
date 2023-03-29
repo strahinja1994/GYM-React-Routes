@@ -1,0 +1,19 @@
+.notfound{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.notfound__title{
+    color: $color1;
+    font-size: 40px;
+}
+
+.notfound__link{
+    padding: 30px 10px;
+    background: $color2;
+    color: $color1;
+}
+
+.notfound__link:hover{
+    background: $color5;
+}
